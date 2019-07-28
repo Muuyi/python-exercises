@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FORM</title>
+  </head>
+  <body>
+    <input type="text" name="phone" id="phone" />
+    <input type="submit" name="submit" value="Submit" id="submit" />
+    <script>
+      var button = document.getElementById("submit");
+      console.log("Hello")
+      button.addEventListener("click",function(){
+        var phone = document.getElementById("phone");
+        var phone_value = phone.value
+        var phone_string = phone_value.toString()
+        //25478944673
+        var init = phone_string.slice(0,4)
+        var other = phone_string.slice(4)
+        if(init=="2547"){
+          window.alert(phone_string)
+        }else{
+          var nw = "2547"+other
+          window.alert(nw)
+        }
+      })
+    </script>
+  </body>
+</html>

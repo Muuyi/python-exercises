@@ -1,9 +1,9 @@
 def is_multiple(n,m):
     p = n%m
     if p==0:
-        print("True");
+        print("True")
     else:
-        print("false");
+        print("false")
 is_multiple(8,4)
 ##CHECKING FOR EVEN AND ODD
 def is_even(k):
