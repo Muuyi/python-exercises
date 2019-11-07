@@ -3,7 +3,7 @@ def sum(n):
     for a in range(0,n):
         total = total + (a*a)
     print(total)
-    lst1 = [] 
+    lst1 = []
     for a in range(50,90,10):
         lst1.append(a)
     print(lst1)
